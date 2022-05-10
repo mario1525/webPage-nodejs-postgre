@@ -1,14 +1,14 @@
-create DATABASE programa;
-
-use DATABASE programa;
+create DATABASE ususarios;
 
 CREATE TABLE Persona
-   (
-      ID int IDENTITY(1,80) PRIMARY KEY,
-      Nombre varchar(50),
-      Apellido varchar(50),
-      correo varchar(50),
-      edad int(11),
-      clave varchar(50)
-
+   (  
+      id serial primary key,    
+      Nombre varchar,
+      Apellido varchar,
+      correo varchar,
+      edad int,
+      clave varchar       
    )
+
+   insert into persona(nombre, apellido, correo, edad, clave ) 
+       values('manuel', 'hola','meio@hte.com',15 ,'masfidáds')

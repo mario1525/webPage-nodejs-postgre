@@ -5,7 +5,13 @@
     grid-template-rows: 80px 500px ;
     gap: 10px;
 }
-
+p{
+    padding-top: 20px;
+    /* border: 1px solid ; */
+}
+.dat{
+    background-color: red;
+}
 .navi{
     grid-area: 1/1/2/6;
 }

@@ -77,23 +77,23 @@
         </nav>
       </div>
       <div class="agregar">
-        <form>
+        <form class="form1" id="form1">
           <ul>
             <li>
               <label class="name">Nombre:</label>
-              <input type="text" class="name" />
+              <input type="text" name="nom" class="name" />
             </li>
             <li>
               <label class="apelli">apellido:</label>
-              <input type="text" />
+              <input type="text" name="apell"/>
             </li>
             <li>
               <label class="mail">Correo electrónico:</label>
-              <input type="email" class="mail" />
+              <input type="email" name="email" class="mail" />
             </li>
             <li>
               <label class="edad">edad</label>
-              <select class="form">
+              <select class="form" name="edad">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -127,27 +127,14 @@
             </li>
             <li>
               <label class="form-label mt-4">Password</label>
-              <input type="password" />
+              <input type="password" name="pwd" />
             </li>
           </ul>
-          <button class="btn btn-success">enviar</button>
+          <ul class="error" id="error"></ul>
+          <button class="btn btn-success" type="submit">enviar</button>
         </form>
-      </div>
-      <div class="ingresar">
-        <form action="">
-          <ul>
-            <li>
-              <label class="mail">Correo electrónico:</label>
-              <input type="email" class="mail" />
-            </li>
-            <li>
-              <label class="form-label mt-4">Password</label>
-              <input type="password" />
-            </li>
-          </ul>
-          <button class="btn btn-success">enviar</button>
-        </form>
-      </div>
-    </section>
+      </div>      
+    </section>    
+    <script src="./validform1.js"></script>
   </body>
 </html>
